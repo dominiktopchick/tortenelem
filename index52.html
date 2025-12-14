@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luther Matron</title>
+    <style>
+        .left-link { display: block; text-align: left; margin: 0; }
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #83c5da; /* light blue */
+            min-height: 100vh; /* ensure the background fills the viewport */
+            color: #003; /* default text color, to ensure contrast */
+        }
+
+        /* Headings */
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin-top: 0;
+        }
+        /* Center h2 headings as well */
+        h2 {
+            text-align: center;
+        }
+
+        /* Paragraphs */
+        p {
+            color: blue;
+            font-size: 18px; /* larger paragraph font */
+            line-height: 1.5;
+        }
+        /* Links: utility to left-align specific links */
+        a { color: inherit; }
+        .left-link {
+            display: block; /* occupy its own line so it starts at the left */
+            text-align: left; /* align text to the left edge */
+            margin: 12px 0; /* small vertical spacing */
+            color: darkblue;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .left-link:hover { text-decoration: underline; }
+
+        /* Images: fixed size 200x200 and centered */
+        img {
+            display: block; /* let margin: auto center the block */
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* keep aspect and crop if necessary */
+            border-radius: 4px; /* subtle rounding */
+            transition: transform 0.35s ease; /* smooth zoom transition */
+            transform-origin: center center;
+        }
+        /* Add container that enforces the 200x200 size and hides overflow so scaled image does not exceed bounds */
+        .img-wrap {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Zoom on hover */
+        .img-wrap img:hover {
+            transform: scale(1.08);
+        }
+
+        /* If you have multiple images, you can use this class to wrap them */
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center; /* center the group */
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Small screens: reduce font-size slightly */
+        @media (max-width: 400px) {
+            p { font-size: 16px; }
+            img { width: 160px; height: 160px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class left-link>Vissza</a>
+    <h1>Petro Mohyla</h1>
+    <h2>1. Élete (1596–1647)</h2>
+    <figure class="image-row">
+        <div class="img-wrap">
+            <img src="https://cdiak.archives.gov.ua/images/vystavky/v_Petro_Mohyla/Petro_Mohyla.jpg">
+        </div>
+    </figure>
+    
+    <p>Petro Mohyla 1596-ban született moldvai fejedelmi családban. Tanulmányait Nyugat-Európában végezte, ahol magas szintű oktatásban részesült, és megismerkedett a kor tudományos és vallási irányzataival.
+Később Kijevbe került, ahol szerzetes lett, majd 1633-ban a kijevi metropolita tisztségét töltötte be. Életének fő célja az ortodox egyház megerősítése volt a Lengyel–Litván Unió területén.</p>
+
+    <!-- Example left-aligned link; add class="left-link" to any <a> to align it to the left -->
+    <h2>2. Egyházi és oktatási tevékenysége</h2>
+    <p>Petro Mohyla nagy hangsúlyt fektetett az oktatásra. 1632-ben megalapította a Kijev–Mohyla Kollégiumot, amely később akadémiává vált, és Kelet-Európa egyik legfontosabb oktatási központja lett.
+Az intézményben teológiát, filozófiát, nyelveket és tudományokat tanítottak, nyugati egyetemek mintájára.</p>
+    <h2>3. Munkássága és reformjai</h2>
+    <p>Mohyla célja az ortodox egyház tanításainak rendszerezése és megerősítése volt. Legismertebb műve az „Ortodox hitvallás”, amely világosan megfogalmazta az ortodox tanítás alapjait.
+Reformjai közé tartozott:
+
+az egyházi fegyelem megerősítése,
+
+a papság képzettségének javítása,
+
+a liturgikus könyvek egységesítése,
+
+az ortodox hit védelme a katolikus és protestáns hatásokkal szemben.
+</p>
+    <h2>4. Jelentősége és öröksége</h2>
+    <p>Petro Mohyla meghatározó szerepet játszott az ukrán és kelet-európai vallási és kulturális életben.
+Munkásságának köszönhetően:
+
+megerősödött az ortodox egyház helyzete;
+
+fejlődött az oktatás és a tudomány;
+
+kialakult az ukrán egyházi és értelmiségi elit.
+
+
+1647-ben halt meg, öröksége pedig ma is él az egyházban és az oktatásban, különösen a Kijev–Mohyla Akadémia révén.
+</p>
+    <figure class="image-row">
+        <div class="img-wrap">
+            <img src="https://risu.ua/uploads/media_news/2021/01/5ffdf5c908289872590432.gif" alt=""/>
+        </div>
+    </figure>
+
+    
+    <p>Всі права захищені Barabashka security, власник сайта Dominik недає права на копіювання сайту!</p>
+</body>
+</html>

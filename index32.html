@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luther Matron</title>
+    <style>
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #83c5da; /* light blue */
+            min-height: 100vh; /* ensure the background fills the viewport */
+            color: #003; /* default text color, to ensure contrast */
+        }
+
+        /* Headings */
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin-top: 0;
+        }
+        /* Center h2 headings as well */
+        h2 {
+            text-align: center;
+        }
+
+        /* Paragraphs */
+        p {
+            color: blue;
+            font-size: 18px; /* larger paragraph font */
+            line-height: 1.5;
+        }
+
+        /* Images: fixed size 200x200 and centered */
+        img {
+            display: block; /* let margin: auto center the block */
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* keep aspect and crop if necessary */
+            border-radius: 4px; /* subtle rounding */
+            transition: transform 0.35s ease; /* smooth zoom transition */
+            transform-origin: center center;
+        }
+        /* Add container that enforces the 200x200 size and hides overflow so scaled image does not exceed bounds */
+        .img-wrap {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Zoom on hover */
+        .img-wrap img:hover {
+            transform: scale(1.08);
+        }
+
+        /* If you have multiple images, you can use this class to wrap them */
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center; /* center the group */
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Small screens: reduce font-size slightly */
+        @media (max-width: 400px) {
+            p { font-size: 16px; }
+            img { width: 160px; height: 160px; }
+        }
+        .left-link { display: block; text-align: left; margin: 0; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class left-link>Vissza</a>
+    <h1>Rolunk</h1>
+    <h2>Coder, designer Dominik</h2>
+    <img src="2025121310382507.jpg" >
+    <h1>informacio es fotok Sanyi</h1>
+    <img src="5325515149760204151.jpg">
+
+    <p>Всі права захищені Barabashka security, власник сайта Dominik недає права на копіювання сайту!</p>
+</body>
+</html>

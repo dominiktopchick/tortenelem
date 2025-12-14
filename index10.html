@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luther Matron</title>
+    <style>
+        .left-link { display: block; text-align: left; margin: 0; }
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #83c5da; /* light blue */
+            min-height: 100vh; /* ensure the background fills the viewport */
+            color: #003; /* default text color, to ensure contrast */
+        }
+
+        /* Headings */
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin-top: 0;
+        }
+        /* Center h2 headings as well */
+        h2 {
+            text-align: center;
+        }
+
+        /* Paragraphs */
+        p {
+            color: blue;
+            font-size: 18px; /* larger paragraph font */
+            line-height: 1.5;
+        }
+        /* Links: utility to left-align specific links */
+        a { color: inherit; }
+        .left-link {
+            display: block; /* occupy its own line so it starts at the left */
+            text-align: left; /* align text to the left edge */
+            margin: 12px 0; /* small vertical spacing */
+            color: darkblue;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .left-link:hover { text-decoration: underline; }
+
+        /* Images: fixed size 200x200 and centered */
+        img {
+            display: block; /* let margin: auto center the block */
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* keep aspect and crop if necessary */
+            border-radius: 4px; /* subtle rounding */
+            transition: transform 0.35s ease; /* smooth zoom transition */
+            transform-origin: center center;
+        }
+        /* Add container that enforces the 200x200 size and hides overflow so scaled image does not exceed bounds */
+        .img-wrap {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Zoom on hover */
+        .img-wrap img:hover {
+            transform: scale(1.08);
+        }
+
+        /* If you have multiple images, you can use this class to wrap them */
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center; /* center the group */
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Small screens: reduce font-size slightly */
+        @media (max-width: 400px) {
+            p { font-size: 16px; }
+            img { width: 160px; height: 160px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class left-link>Vissza</a>
+    <h1>Martin Luther</h1>
+    <h2>1. Élete (1483–1546)</h2>
+    <figure class="image-row">
+        <div class="img-wrap">
+            <img src="https://media.gettyimages.com/id/1449384494/photo/old-engraving-illustration-of-of-martin-luther-burns-the-papal-bull-in-wittenberg.jpg?s=612x612&w=gi&k=20&c=8aWO2uQ07VMgyhCuOCXVGITZHDDWB4UlDhe9FeJf8ms=">
+        </div>
+    </figure>
+    
+    <p>Martin Luther 1483. november 10-én született Eislebenben, Németországban. Gyermekkorát Mansfeldben töltötte, majd később jogot tanult, mert apja azt szerette volna, ha ügyvéd lesz. Egy vihar során halálfélelmében megfogadta, hogy szerzetes lesz, így belépett az Ágoston-rendbe.
+Szerzetesként és teológusként Wittenbergben tanított, és mélyen foglalkoztatták a hit, az üdvösség és az egyházi gyakorlatok kérdései.</p>
+
+    <!-- Example left-aligned link; add class="left-link" to any <a> to align it to the left -->
+    <h2>2. Munkássága</h2>
+    <p>Luther sok teológiai művet írt, prédikált, vitákban vett részt és olyan új tanításokat fogalmazott meg, amelyek megkérdőjelezték a katolikus egyház több tanítását.
+Legfontosabb gondolatai közé tartozott:
+
+az ember hit által igazul meg (nem cselekedetekkel vagy pénzzel),
+
+a Biblia a hit egyetlen hiteles forrása,
+
+minden hívő „egyenlő Isten előtt”.
+
+
+Emellett hatalmas munkát végzett a Biblia német nyelvre fordításában, amely óriási hatással volt a német irodalom fejlődésére is.</p>
+    <h2>3. A reformáció kezdete</h2>
+    <p>1517. október 31-én Luther közzétette híres 95 tételét. Ezekben elsősorban a búcsúcédulák árusítását bírálta, amelyet az egyház pénzszerzésre használt.
+A tételek gyorsan elterjedtek Európában, nagy részben a könyvnyomtatásnak köszönhetően.
+A katolikus egyház kiközösítette Luthert, de ő továbbra is tanított és terjesztette nézeteit. Munkásságából született meg a lutheránus vallás, amely a protestantizmus egyik legfontosabb ága.</p>
+    <h2>4. Hatása és öröksége</h2>
+    <p>Luther nemcsak vallási, hanem kulturális és társadalmi változásokat is elindított:
+
+megújította a keresztény hitről való gondolkodást;
+
+támogatói révén új iskolák és egyházi intézmények jöttek létre;
+
+fordításaival elősegítette a német nyelv egységesedését;
+
+tanításai nyomán Európa jelentős része protestánssá vált.
+
+
+Martin Luther 1546-ban halt meg, de öröksége ma is meghatározó a vallás, történelem és kultúra számára.</p>
+    <figure class="image-row">
+        <div class="img-wrap">
+            <img src="https://www.evangelikus.hu/images/fogalomtar/Luther_Marton/martin-luther-might-not-have-nailed-his-95-theses-to-the-church-doors.jpg" alt=""/>
+        </div>
+    </figure>
+
+    
+    <p>Всі права захищені Barabashka security, власник сайта Dominik недає права на копіювання сайту!</p>
+</body>
+</html>
